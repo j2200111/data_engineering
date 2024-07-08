@@ -12773,7 +12773,6 @@ Name: gender_cd, dtype: int64
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">sales_total_per_customer</span> <span class="o">=</span> <span class="n">df_receipt</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'customer_id'</span><span class="p">)[</span><span class="s1">'amount'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
-<span class="c1"># 売上金額合計を自然対数化（底e）</span>
 <span class="n">log_sales_total</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">sales_total_per_customer</span><span class="p">)</span>
 
 <span class="c1"># 平均と標準偏差を計算</span>
