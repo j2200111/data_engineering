@@ -23279,7 +23279,7 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [125]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="n">df_product_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df_product</span><span class="p">,</span> <span class="n">df_category</span><span class="p">[[</span><span class="s1">'category_small_cd'</span><span class="p">,</span> 
@@ -23299,78 +23299,22 @@ $$</p>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[125]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[19], line 1</span>
+<span class="ansi-green-fg">----&gt; 1</span> df_product_full <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">pd</span><span style="color: rgb(98,98,98)">.</span>merge(df_product, df_category[[<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_small_cd</span><span style="color: rgb(175,0,0)">'</span>, 
+<span class="ansi-green-intense-fg ansi-bold">      2</span>                                                     <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_major_name</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">      3</span>                                                     <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_medium_name</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>                                                     <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_small_name</span><span style="color: rgb(175,0,0)">'</span>]], 
+<span class="ansi-green-intense-fg ansi-bold">      5</span>                            how <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">inner</span><span style="color: rgb(175,0,0)">'</span>, on <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_small_cd</span><span style="color: rgb(175,0,0)">'</span>)
+<span class="ansi-green-intense-fg ansi-bold">      7</span> <span style="color: rgb(95,135,135)"># データの内容確認</span>
+<span class="ansi-green-intense-fg ansi-bold">      8</span> df_product_full<span style="color: rgb(98,98,98)">.</span>head(<span style="color: rgb(98,98,98)">3</span>)
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>product_cd</th>
-<th>category_major_cd</th>
-<th>category_medium_cd</th>
-<th>category_small_cd</th>
-<th>unit_price</th>
-<th>unit_cost</th>
-<th>category_major_name</th>
-<th>category_medium_name</th>
-<th>category_small_name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>P040101001</td>
-<td>04</td>
-<td>0401</td>
-<td>040101</td>
-<td>198.0</td>
-<td>149.0</td>
-<td>惣菜</td>
-<td>御飯類</td>
-<td>弁当類</td>
-</tr>
-<tr>
-<th>1</th>
-<td>P040101002</td>
-<td>04</td>
-<td>0401</td>
-<td>040101</td>
-<td>218.0</td>
-<td>164.0</td>
-<td>惣菜</td>
-<td>御飯類</td>
-<td>弁当類</td>
-</tr>
-<tr>
-<th>2</th>
-<td>P040101003</td>
-<td>04</td>
-<td>0401</td>
-<td>040101</td>
-<td>230.0</td>
-<td>173.0</td>
-<td>惣菜</td>
-<td>御飯類</td>
-<td>弁当類</td>
-</tr>
-</tbody>
-</table>
-</div>
+<span class="ansi-red-fg">NameError</span>: name 'pd' is not defined</pre>
 </div>
 </div>
 </div>
@@ -23396,12 +23340,12 @@ $$</p>
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs">
+</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [126]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># コード例1</span>
@@ -23409,6 +23353,27 @@ $$</p>
 <span class="n">df_product_full</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s1">'../data/P_df_product_full_UTF-8_header.csv'</span><span class="p">,</span> 
                        <span class="n">encoding</span><span class="o">=</span><span class="s1">'UTF-8'</span><span class="p">,</span> <span class="n">index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="jp-Cell-outputWrapper">
+<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
+</div>
+<div class="jp-OutputArea jp-Cell-outputArea">
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[17], line 3</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(95,135,135)"># コード例1</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(95,135,135)"># 解答ファイルの置き場所が設問ファイルと異なるため、パスが'../data'となっている点に注意</span>
+<span class="ansi-green-fg">----&gt; 3</span> <span class="ansi-yellow-bg">df_product_full</span><span style="color: rgb(98,98,98)">.</span>to_csv(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">../data/P_df_product_full_UTF-8_header.csv</span><span style="color: rgb(175,0,0)">'</span>, 
+<span class="ansi-green-intense-fg ansi-bold">      4</span>                        encoding<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">UTF-8</span><span style="color: rgb(175,0,0)">'</span>, index<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">False</span>)
+
+<span class="ansi-red-fg">NameError</span>: name 'df_product_full' is not defined</pre>
 </div>
 </div>
 </div>
@@ -23643,12 +23608,12 @@ $$</p>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [131]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In [2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
 <div class="cm-editor cm-s-jupyter">
 <div class="highlight hl-ipython3"><pre><span></span><span class="c1"># コード例1（後から項目名をつける）</span>
 <span class="c1"># 解答ファイルの置き場所が設問ファイルと異なるため、パスが'../data'となっている点に注意</span>
-<span class="n">df_product_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../data/P_df_product_full_UTF-8_noh.csv'</span><span class="p">,</span>
+<span class="n">df_product_full</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'../answer/P_df_product_full_UTF-8_noh.csv'</span><span class="p">,</span>
                      <span class="n">dtype</span><span class="o">=</span><span class="p">{</span><span class="mi">1</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span>
                             <span class="mi">2</span><span class="p">:</span><span class="nb">str</span><span class="p">,</span>
                             <span class="mi">3</span><span class="p">:</span><span class="nb">str</span><span class="p">},</span>
@@ -23669,78 +23634,27 @@ $$</p>
 <div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
 </div>
 <div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child jp-OutputArea-executeResult">
-<div class="jp-OutputPrompt jp-OutputArea-prompt">Out[131]:</div>
-<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
-<div>
-<style scoped="">
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
+<div class="jp-OutputArea-child">
+<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
+<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">NameError</span>                                 Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[2], line 3</span>
+<span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(95,135,135)"># コード例1（後から項目名をつける）</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(95,135,135)"># 解答ファイルの置き場所が設問ファイルと異なるため、パスが'../data'となっている点に注意</span>
+<span class="ansi-green-fg">----&gt; 3</span> df_product_full <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">pd</span><span style="color: rgb(98,98,98)">.</span>read_csv(<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">../answer/P_df_product_full_UTF-8_noh.csv</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">      4</span>                      dtype<span style="color: rgb(98,98,98)">=</span>{<span style="color: rgb(98,98,98)">1</span>:<span style="color: rgb(0,135,0)">str</span>,
+<span class="ansi-green-intense-fg ansi-bold">      5</span>                             <span style="color: rgb(98,98,98)">2</span>:<span style="color: rgb(0,135,0)">str</span>,
+<span class="ansi-green-intense-fg ansi-bold">      6</span>                             <span style="color: rgb(98,98,98)">3</span>:<span style="color: rgb(0,135,0)">str</span>},
+<span class="ansi-green-intense-fg ansi-bold">      7</span>                      encoding<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">UTF-8</span><span style="color: rgb(175,0,0)">'</span>, header<span style="color: rgb(98,98,98)">=</span><span class="ansi-bold" style="color: rgb(0,135,0)">None</span>)
+<span class="ansi-green-intense-fg ansi-bold">      9</span> df_product_full<span style="color: rgb(98,98,98)">.</span>columns <span style="color: rgb(98,98,98)">=</span> [<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">product_cd</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_major_cd</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">     10</span>                            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_medium_cd</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_small_cd</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">     11</span>                            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">unit_price</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">unit_cost</span><span style="color: rgb(175,0,0)">'</span>,<span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_major_name</span><span style="color: rgb(175,0,0)">'</span>,
+<span class="ansi-green-intense-fg ansi-bold">     12</span>                            <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_medium_name</span><span style="color: rgb(175,0,0)">'</span>, <span style="color: rgb(175,0,0)">'</span><span style="color: rgb(175,0,0)">category_small_name</span><span style="color: rgb(175,0,0)">'</span>]
+<span class="ansi-green-intense-fg ansi-bold">     14</span> df_product_full<span style="color: rgb(98,98,98)">.</span>head(<span style="color: rgb(98,98,98)">3</span>)
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-<thead>
-<tr style="text-align: right;">
-<th></th>
-<th>product_cd</th>
-<th>category_major_cd</th>
-<th>category_medium_cd</th>
-<th>category_small_cd</th>
-<th>unit_price</th>
-<th>unit_cost</th>
-<th>category_major_name</th>
-<th>category_medium_name</th>
-<th>category_small_name</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<th>0</th>
-<td>P040101001</td>
-<td>04</td>
-<td>0401</td>
-<td>040101</td>
-<td>198.0</td>
-<td>149.0</td>
-<td>惣菜</td>
-<td>御飯類</td>
-<td>弁当類</td>
-</tr>
-<tr>
-<th>1</th>
-<td>P040101002</td>
-<td>04</td>
-<td>0401</td>
-<td>040101</td>
-<td>218.0</td>
-<td>164.0</td>
-<td>惣菜</td>
-<td>御飯類</td>
-<td>弁当類</td>
-</tr>
-<tr>
-<th>2</th>
-<td>P040101003</td>
-<td>04</td>
-<td>0401</td>
-<td>040101</td>
-<td>230.0</td>
-<td>173.0</td>
-<td>惣菜</td>
-<td>御飯類</td>
-<td>弁当類</td>
-</tr>
-</tbody>
-</table>
-</div>
+<span class="ansi-red-fg">NameError</span>: name 'pd' is not defined</pre>
 </div>
 </div>
 </div>
